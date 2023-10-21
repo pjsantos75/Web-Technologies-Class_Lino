@@ -6,29 +6,56 @@
     <title>RegistrationForm.html</title>
 </head>
 <body>
+    <!--Crie uma pagina HTML chamada RegistrationForm.html-->
     <h1>Registration Form</h1>
-    <form action="https://www.webucator.com/materials/htm101/" method="post">
-        Username:
-        <input type="text" name="username" required>
-        <br>
-        Password:
-        <input type="password" name="password" required> 
-        <br>
-        Gender: 
-        <input type="radio" name="gender" value="Male"> Male
-        <input type="radio" name="gender" value="Female"> Female
-        <br>
-        Click to accept our terms:
-        <input type="checkbox">
-        <br>
-        Where did you hear about us:
-        <select name="aboutus" id="aboutus">
-            <option value="Internet">Internet</option>
-            <option value="Media">Media</option>
-            <option value="People">People</option>
-            <option value="Other">Other</option>
-        </select>   
 
+    <!--A action do form é https://www.webucator.com/materials/htm101/ e método post-->
+    <form action="https://www.webucator.com/materials/htm101/" method="post">
+
+        <!--text: name e id devem ser ”username”-->    
+        Username:
+        <input type="text" id="username" name="username" required>
+        <br>
+
+        <!--password: name e id devem ser ”pw”-->
+        Password:
+        <input type="password" id="pw" name="pw" required> 
+        <br>
+
+        <!-- Adicione 2 radio buttons -->
+        Gender: 
+        <input type="radio" id="genderm" name="gender" value="m"> Male
+        <input type="radio" id="genderf" name="gender" value="f"> Female
+        <br>
+
+        <!-- Adicione uma checkbox em que name e id devem ser ”terms”-->
+        Click to accept our terms:
+        <input type="checkbox" id="terms" name="terms">
+        <br>
+
+        <!--Adicione um “select”. Name e Id devem ser “referral”-->
+        Where did you hear about us:
+        <select name="referal" id="referal">
+            <option value="0">--Please Choose--</option>
+            <option value="wom">Word of Mouth</option>
+
+            <!--Option group com o label ”Search Engine”-->
+            <optgroup label="Search Engine">
+                <option value="Google">Google</option>
+                <option value="Yahoo">Yahoo</option>
+                <option value="MSN">MSN</option>
+        </select> 
+        <br>
+
+        <!--textarea: nome e id devem ser ”comments”. incluir atributos cols e rows.-->
+        Comments:<br>
+        <textarea id="Comments" name="Comments" rows="10" cols="45">    
+        </textarea>
+        <br>
+        
+        <!--botao submit: o valor deve ser ”Register” | botao de reset -->
+        <input type="button" value="Register">
+        <input type="button" value="reset">
 
     </form>
 </body>
