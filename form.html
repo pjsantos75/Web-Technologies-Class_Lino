@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ficha1_ex07</title>
+</head>
+<body>
+    <!--Crie um header com o tıtulo ”Registration Form”-->
+    <h1>Registration Form</h1>
+
+    <!--Crie um form method post que submete para o proprio documento ”form.html”-->
+    <form action="https:form.html" method="post">
+        
+        <!--Crie um fieldset com a legenda ”Personal info”-->
+        <fieldset>
+            <legend>Personal Information</legend>
+
+            <!--Um input para do tipo text com o label “Name”-->
+            Name
+            <input type="text" id="Name" name="Name" required  pattern="[A-Z][a-z]+\s[A-Z][a-z]+"><br>
+
+            <!-- Dois radio button para escolher ”membership”-->
+            Member<input type="radio" name="member" value="member">
+            Non-member<input type="radio" name="non-member" value="non-member"><br>
+
+            <!-- Um input para recolher o e-mail-->
+            Email
+            <input type="email" id="email" name="email" required><br>
+ 
+        </fieldset>
+
+        <!--Crie um fieldset com a legenda ”Reservation Info”-->
+        <fieldset>
+            <legend>Reservation Info</legend>
+
+            <!--Um select ”Facility” disponibiliza valores: ”Badminton”, ”Squash”, ”Racquetball”.-->
+            Facility
+            <select name="Facility" id="Facility">
+                <option value="Badminton">Badminton</option>
+                <option value="Squash">Squash</option>
+                <option value="Racquetball">Racquetball</option>
+            </select><br>
+
+        <!--Um input que recolha data e hora da reserva-->
+        Select a reservation date and time:
+        <input type="datetime-local" name="datetime-local"><br>
+        
+        <!--Crie uma checkbox com o texto ”I agree to the club’s reservation policy”-->
+        <input type="checkbox" name="policy" id="policy"> ”I agree to the club’s reservation policy”
+        <br>
+        
+        <!--Crie um botao para submeter o formulario-->
+        <input type="button" name="submit" value="Submit">
+
+
+    </form>
+
+</body>
+</html>
